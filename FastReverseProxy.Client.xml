@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FastReverseProxy.Client</name>
+    </assembly>
+    <members>
+        <member name="T:FastReverseProxy.Client.FastReverseProxyClient">
+            <summary>
+            <see href="https://github.com/fatedier/frp"/>
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.GetClientStatus``1(System.Threading.CancellationToken)">
+            <summary>
+            GET /api/status – Retrieves the client’s status.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.GetClientConfig``1(System.String,System.Threading.CancellationToken)">
+            <summary>
+            GET /api/config – Retrieves the current client configuration.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.UpdateClientConfig``1(System.Object,System.String,System.Threading.CancellationToken)">
+            <summary>
+            PUT /api/config – Updates the client configuration.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.ReloadClientConfig``1(System.Threading.CancellationToken)">
+            <summary>
+            GET /api/reload – Reloads the client configuration.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.StopClient``1(System.Threading.CancellationToken)">
+            <summary>
+            POST /api/stop – Stops the client. This is a fire‑and‑forget endpoint (an empty response is considered success).
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.GetServerInfo``1(System.Threading.CancellationToken)">
+            <summary>
+            GET /api/serverinfo – Retrieves the server’s information.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.GetProxiesByType``1(System.String,System.Threading.CancellationToken)">
+            <summary>
+            GET /api/proxy/{type} – Retrieves proxies by type (e.g. "tcp", "https").
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.GetTrafficByProxy``1(System.String,System.Threading.CancellationToken)">
+            <summary>
+            GET /api/traffic/{name} – Retrieves traffic statistics for the specified proxy.
+            </summary>
+        </member>
+        <member name="M:FastReverseProxy.Client.FastReverseProxyClient.SendRequest``1(System.String,System.Net.Http.HttpMethod,System.Object,System.String,System.Threading.CancellationToken)">
+            <summary>
+            POST /api/shutdown – Shuts down the server.
+            </summary>
+        </member>
+    </members>
+</doc>
